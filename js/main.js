@@ -11,7 +11,7 @@
         Electricty: "Electricty Cost per Month",
         NaturalGas: "Natural Gas Cost per Month",
         Internet_60Mbps: "Internet (60Mbps) Cost per Month",
-        TotalCost: "Average Cost per Month"
+        TotalCost: "Average Utility Cost per Month"
     };
 
 
@@ -203,18 +203,17 @@
         };
     };
 
-    // Jenks Methods to create color scale based on attribute values in a csv file
+    
     function makeColorScale(data) {
 
 
 
-       // darker greens
        var colorClasses = [
-           "#66D382",
-           "#C5EFC7",
-           // "#F1F1F2",
-           "#FCEAA0",
-           "#F09A61"
+           "#E7F3EF",
+           "#79BEA8",
+           "#448D76",
+           "#23483C",
+           "#093426"
        ];
 
         // d3's color generator
@@ -487,12 +486,12 @@
             .append("div")
             .attr("class", "infolabel")
             .attr("id", dataProperties.abbrev + "_label")
-            .html(labelAttribute);
+            .html("$"+labelAttribute);
 
         // append label to infolabel
         var stateName = infolabel.append("div")
             .attr("class", "stateName")
-            .html(dataProperties.name);
+            .html(dataProperties.abbrev);
     };
 
     // Moves infolabel with mouse move
