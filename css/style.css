@@ -1,0 +1,159 @@
+h2{
+font-weight: bold;
+  color: #341809;
+}
+
+.chartFrame {
+    fill: none;
+    /* stroke: white; */
+    stroke-width: 3px;
+    shape-rendering: crispEdges;
+}
+.image{
+  margin: 0px;
+  height: 500px;
+}
+
+
+.axis path,
+.axis line {
+    fill: none;
+    stroke: black;
+    stroke-width: 1px;
+    shape-rendering: crispEdges;
+}
+
+.axis text {
+    font-family: sans-serif;
+    font-size: 0.9em;
+}
+
+.title {
+    font-family: sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.states {
+    fill: tomato;
+    stroke: gray;
+    stroke-width: 2px;
+}
+
+.gratLines {
+    fill: none;
+    stroke: #999;
+    stroke-width: 1px;
+}
+
+.map {
+    border: medium solid white;
+    margin: 10px 0 0 20px;
+}
+
+.chart {
+    background-color: rgba(128,128,128,.2);
+    border: medium solid white;
+    float: right;
+    margin: 10px 20px 0 0;
+}
+
+.chartTitle{
+  font-size: 15px;
+}
+.numbers {
+    fill: white;
+    font-family: sans-serif;
+}
+
+
+
+svg text {
+  font: 11px Arial, Georgia, sans-serif;
+  fill: #fff;
+
+}
+
+
+.arc path {
+  stroke: #555;
+}
+
+path.slice{
+	stroke-width:2px;
+}
+
+polyline{
+	opacity: .3;
+	stroke: black;
+	stroke-width: 2px;
+	fill: none;
+}
+
+.dropdown {
+    position: absolute;
+    top: 100px;
+    left: 25px;
+    z-index: 10;
+    font-family: sans-serif;
+    background-color: #555;
+    color: white;
+    font-size: 1em;
+    font-weight: bold;
+    padding: 2px;
+    border: 1px solid #999;
+    box-shadow: 2px 1px 1px #999;
+}
+
+option {
+    font-weight: normal;
+}
+
+.infolabel {
+    position: absolute;
+    min-height: 50px;
+    opacity: 0.8;
+    min-width: 100px;
+    color: #fff;
+    background-color: #000;
+    border: solid thin #fff;
+    padding: 5px 10px;
+}
+
+.infolabel h1 {
+    margin: 0 20px 0 0;
+    padding: 0;
+    display: inline-block;
+    line-height: 1em;
+}
+
+.large-title h1 {
+  font-weight: bold;
+  text-align:left;
+  color: white;
+  font-size: 30px;
+  font-family:"Arial Black", Gadget, sans-serif;
+}
+
+.large-title {
+  position: absolute;
+  top: 430px;
+  left: 11px;
+}
+
+body {
+  /* background-color: lightgray; */
+
+    background-image: linear-gradient(lightgray, gray); /* Standard syntax (must be last) */
+}
+
+.source {
+    position: absolute;
+    bottom: 250px;
+    left: 20px;
+    z-index: 10;
+    font-family: sans-serif;
+    color: #808080;
+    font-size: 10px;
+    font-weight: bold;
+}
