@@ -181,7 +181,7 @@ function setEnumerationUnits(stateBoundaries, map, path, colorScale) {
 
   // Add desc element for each path element in states object to change stroke
   var desc = states.append("desc")
-      .text('{"stroke": "gray", "stroke-width": "0.5"}');
+      .text('{"stroke": "#666666", "stroke-width": "0.5"}');
 
 var sources = d3.select("body")
 .append("div")
@@ -414,7 +414,7 @@ function updateChart(bars, n, colorScale) {
 
   var yAxis = d3.axisLeft()
       .scale(yScale)
-      
+
       //Format the charts axis labels
       .tickFormat(function (d) {
           if ((d / 1000) >= 1) {
